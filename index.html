@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<<title>Gorilla Tag Companion</title>
+
+<link rel="stylesheet" href="style.css">
+<link rel="manifest" href="manifest.json">
+
+</head>
+
+<body>
+
+<header>
+🦍 Gorilla Tag Companion
+<p>Fan-made Gorilla Tag Helper</p>
+</header>
+
+
+<div class="profile card">
+<h2>👤 Monkey Profile</h2>
+
+<h3 id="level">Level 1</h3>
+
+<div class="xp-container">
+<div id="xpbar"></div>
+</div>
+
+<p id="xpText">
+XP 0 / 100
+</p>
+
+</div>
+
+
+
+<div class="buttons">
+
+<button onclick="openTab('home')">
+🏠 Home
+</button>
+
+<button onclick="openTab('challenges')">
+🎯 Challenges
+</button>
+
+<button onclick="openTab('maps')">
+🗺️ Maps
+</button>
+
+<button onclick="openTab('stats')">
+📊 Stats
+</button>
+
+<button onclick="openTab('shop')">
+🛍️ Tracker
+</button>
+
+</div>
+
+
+
+<section id="home" class="tab">
+
+<div class="card">
+<h2>Welcome Monkey!</h2>
+
+<p>
+Train, track progress, and complete challenges.
+</p>
+
+</div>
+
+
+<div class="card">
+<h2>🔥 Daily Goal</h2>
+
+<p id="daily">
+Loading...
+</p>
+
+</div>
+
+</section>
+
+
+
+
+<section id="challenges" class="tab hidden">
+
+<div class="card">
+
+<h2>🎯 Challenge Wheel</h2>
+
+<h3 id="challenge">
+Press Spin
+</h3>
+
+<button onclick="spinChallenge()">
+SPIN
+</button>
+
+</div>
+
+</section>
+
+
+
+
+<section id="maps" class="tab hidden">
+
+<div class="card">
+
+<h2>🗺️ Maps</h2>
+
+<div class="map">
+🌲 Forest
+<br>
+Practice: Branching + Routes
+</div>
+
+<div class="map">
+🏔️ Mountains
+<br>
+Practice: Wall climbing
+</div>
+
+
+<div class="map">
+🏙️ City
+<br>
+Practice: Movement
+</div>
+
+
+<div class="map">
+🕳️ Caves
+<br>
+Practice: Escapes
+</div>
+
+
+</div>
+
+</section>
+
+
+
+
+
+<section id="stats" class="tab hidden">
+
+<div class="card">
+
+<h2>📊 Stats</h2>
+
+<p id="games">
+Games: 0
+</p>
+
+<p id="time">
+Play Time: 0 min
+</p>
+
+
+<button onclick="addGame()">
++ Game Played
+</button>
+
+
+<button onclick="startTimer()">
+Start Timer
+</button>
+
+
+</div>
+
+
+<div class="card">
+
+<h2>🏆 Achievements</h2>
+
+<p id="achievements">
+No achievements yet
+</p>
+
+</div>
+
+
+</section>
+
+
+
+
+
+<section id="shop" class="tab hidden">
+
+<div class="card">
+
+<h2>🛍️ Cosmetic Tracker</h2>
+
+
+<label>
+<input type="checkbox" id="hat">
+ Hat
+</label>
+
+<br>
+
+<label>
+<input type="checkbox" id="badge">
+ Badge
+</label>
+
+<br>
+
+<label>
+<input type="checkbox" id="face">
+ Face Item
+</label>
+
+
+</div>
+
+</section>
+
+
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
